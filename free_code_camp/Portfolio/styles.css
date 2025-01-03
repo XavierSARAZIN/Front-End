@@ -70,14 +70,34 @@ a:hover {
     transform: scale(1.15);
 }
 
+.icons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 2em;
+    margin-top: 150px;
+}
+
+.icons i {
+    font-size: 40px;
+    color: #5c7d9e;
+    margin: 10px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.icons i:hover {
+    color: #f39c12;
+    transform: scale(1.2);
+}
+
 .title-1 {
-    margin: 150px 0 0 0;
+    margin: 30px 0 0 0;
     font-size: 2em;
     color: rgb(255, 149, 0);
 }
 
 .title-2 {
-    margin: 50px 0 30px 0;
+    margin: 30px 0 30px 0;
     font-size: 2em;
     color: rgb(255, 149, 0);
 }
@@ -258,7 +278,23 @@ footer {
         width: 100%;
     }
 }
+
 /*WORKS Page*/
+.title-3 {
+    padding: 5px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgba(255, 149, 0);
+    margin: 50px 0 0 0;
+    font-size: 2em;
+    color: rgb(255, 149, 0);
+}
+
+.title-4 {
+    padding: 5px;
+    margin: 150px 0 0 0;
+    font-size: 2em;
+    color: rgb(255, 149, 0);
+}
 
 .works {
     text-align: center;
@@ -278,7 +314,7 @@ footer {
     border-radius: 15px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease-in-out;
-    height:150px;
+    height: 150px;
     cursor: pointer;
 }
 
@@ -292,7 +328,7 @@ footer {
     display: flex;
     color: rgb(255, 253, 223);
     margin: 10px 0;
-    height:35px;
+    height: 35px;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -305,26 +341,86 @@ footer {
 @media (max-width: 768px) {
     .work-gallery {
         grid-template-columns: repeat(2, 1fr);
-        /* 2 colonnes pour les écrans de taille moyenne */
         gap: 20px;
     }
 
     .work-card {
         height: 180px;
-        /* Ajuster la hauteur des cartes pour qu'elles tiennent mieux */
     }
 }
 
-/* Pour les très petits écrans (max-width: 450px) */
 @media (max-width: 450px) {
     .work-gallery {
         grid-template-columns: 1fr;
-        /* Une seule colonne pour les petits écrans */
         gap: 15px;
     }
 
     .work-card {
         height: auto;
-        /* Ajuster la hauteur pour que le contenu s'adapte */
     }
+}
+
+/* Formulaire */
+.contact-form {
+    max-width: 100%;
+
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255);
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-form{
+    margin-bottom:150px;
+    text-align:center;
+    background: rgb(0, 53, 114);
+}
+/* Bouton */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
 }
