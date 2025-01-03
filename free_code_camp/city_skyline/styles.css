@@ -50,7 +50,6 @@ body {
             #bbeeff 100%);
 }
 
-/* BACKGROUND BUILDINGS - "bb" stands for "background building" */
 .bb1 {
     width: 10%;
     height: 70%;
@@ -139,7 +138,6 @@ body {
     background-color: var(--window-color4);
 }
 
-/* FOREGROUND BUILDINGS - "fb" stands for "foreground building" */
 .fb1 {
     width: 10%;
     height: 60%;
@@ -276,7 +274,7 @@ body {
             var(--window-color3) 30%);
 }
 
-@media (max-width: 1900px) {
+@media (max-width: 1000px) {
     :root {
         --window-color1: #777;
         --window-color2: #777;
